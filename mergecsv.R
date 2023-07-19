@@ -31,7 +31,7 @@ dt16_22 <- rbindlist(lapply(files, fread), fill=TRUE)
 
 ##save the merged data.table to new csv file using 'fwrite()'
 
-fwrite(dt16_22, "C:\\Users\\PATANJALI\\Desktop\\development_work\\data_analysis_1\\R_DataTable\\pah_data\\patient_16_22.csv")
+fwrite(dt16_22, "C:\\path\\patient_16_22.csv")
 
 
 ##this create "PAH_2016_2022.csv" file my folder having 500MB in size
