@@ -4,7 +4,7 @@
 library(data.table)
 
 ##set path 
-path <- "C:\\Users\\PATANJALI\\Desktop\\development_work\\data_analysis_1\\R_DataTable\\pah_data\\"
+path <- "C:\\my_path\\"
 
 ##use the 'list.files()' function to get list of all CSV file 
 
