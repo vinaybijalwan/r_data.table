@@ -53,3 +53,21 @@ sumSt
 #> Now we have sum of only two column as row wise sum 
 #> here is math column and hindi column  
 #> math 80 and hindi is 75 then sum is 155, like all the row only my selected column
+
+
+col_index_01 <- c("math", "hindi", "sanskrit", "EVS" )
+sumAll <- df1[, result := sum(.SD[, ..col_index_01]), by = 1:nrow(df1)]
+
+print(sumAll)
+
+#     math hindi sanskrit EVS result
+# 1:   80    75       50  45    250
+# 2:   90    45       45  56    236
+# 3:   50    45       78  67    240
+# 4:   60    60       68  89    277
+# 5:   75    70       54  67    266
+# 6:   45    75       90  59    269
+# 7:   78    65       54  79    276
+# 8:   55    78       76  50    259
+# 9:   95    61       86  70    312
+# 10:   80    40       60  50    230
